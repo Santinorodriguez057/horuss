@@ -1,0 +1,12 @@
+<?php
+$servidor = "localhost";   // Servidor donde está alojada la base de datos
+$usuario = "root";         // Usuario de la base de datos
+$password = "";            // Contraseña del usuario
+$base_datos = "horusbd"; // Nombre de la base de datos
+
+$conexion = new mysqli($servidor, $usuario, $password, $base_datos);
+
+if ($conexion->connect_error) {
+    die("Error en la conexión: " . $conexion->connect_error);
+}
+?>

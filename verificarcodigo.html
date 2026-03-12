@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecuperarContraseña - Horus Streetwear</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body class="body_sesion">
+    <div class="cuadrado">
+      <aside class="panel-izquierdo">
+                <a href="recuperarcontraseña.html" class="btn-volver" aria-label="Volver" title="Volver">
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+    <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor"/>
+  </svg>
+</a>  
+        <a href="Inicio.php">
+          <img
+            src="imagenes/horuslogonegro.png"
+            class="logo_sesion"
+            alt="Horus Streetwear"
+          />
+        </a>
+        <p class="contacto">horusstreetwearar@gmail.com</p>
+      </aside>
+      <div class="panel-derecho">
+        <h1 class="titulo-principal">Recuperar contraseña</h1>
+
+        <form action="verificarcodigo.php" method="POST" class="form_restablecer">
+          <div class="cuadrado-container">
+            <input
+              type="number"
+              maxlength="6"
+              class="cuadrado-input"
+              placeholder="••••••"
+              pattern="\d{5}"
+              name="codigo"
+            />
+          </div>
+          <button type="submit" class="btn">Confirmar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

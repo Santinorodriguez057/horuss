@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - Horus Streetwear</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body class="body_sesion">
+    <div class="cuadrado">
+      <aside class="panel-izquierdo">
+        <a href="Inicio.php">
+          <img
+            src="imagenes/horuslogonegro.png"
+            class="logo_sesion"
+            alt="Horus Streetwear"
+          />
+        </a>
+        <p class="contacto">horusstreetwearar@gmail.com</p>
+      </aside>
+
+      <div class="panel-derecho">
+        <h1 class="titulo-principal">Crear cuenta</h1>
+
+        <!-- Formulario -->
+        <form method="post" action="registrar.php">
+          <div class="formulario">
+            <label>Nombre</label>
+            <input type="text" name="nombre" required />
+          </div>
+
+          <div class="formulario">
+            <label>Apellido</label>
+            <input type="text" name="apellido" required />
+          </div>
+
+          <div class="formulario">
+            <label>Email</label>
+            <input type="email" name="email" required />
+          </div>
+
+          <div class="formulario">
+            <label>Fecha de nacimiento</label>
+            <input type="date" name="fecha_de_nacimiento" required />
+          </div>
+
+          <div class="formulario">
+            <label>Contraseña (min 8 caracteres)</label>
+            <div class="input-con-ojo">
+              <input type="password" id="clave" name="contrasena" required />
+              <button type="button" onclick="verClave()" class="ojo">👁</button>
+            </div>
+          </div>
+
+          <script>
+            function verClave() {
+              let input = document.getElementById("clave");
+              input.type = input.type === "password" ? "text" : "password";
+            }
+          </script>
+
+          <div class="formulario">
+            <label>Confirmar Contraseña</label>
+            <input type="password" name="rep_contrasena" required />
+          </div>
+
+          <button type="submit" class="btn">Registrarse</button>
+        </form>
+
+        <p class="login-link">
+          ¿Ya tienes una cuenta?
+          <a href="InicioDeSesion.html">Inicia sesión</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

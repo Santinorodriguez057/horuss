@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+
+  <body class="body_carrito">
+       <a href="Inicio.php">
+    <img src="imagenes/horuslogo.png" class="logo_carrito" href="Inicio.php"/>
+        </a>
+    </nav>
+    <div class="cart_carrito">
+      <div class="cart-header">
+        <span>productos</span>
+        <span>precio</span>
+        <span>cantidad</span>
+        <span>total</span>
+        <span>quitar</span>
+      </div>
+      <div class="cart-items">
+        <div class="cart-item">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div>
+        <div class="cart-total">
+          <h3>Cart total</h3>
+          <p>Subtotal <span class="subtotal">$0</span></p>
+          <p>Delivery Fee <span>Free</span></p>
+          <p>Grand total<span class="grand-total">$0</span></p>
+          <button class="boton"id="checkoutBtn">Proceed to checkout</button>
+          <a href="Modelos.html" class="seguircomprando">Seguir comprando</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <footer class="footer">
+    <div class="footer_contenedor">
+      <!-- Título y redes -->
+      <div class="footer_izquierda">
+        <h2 class="footer_titulo">Horus</h2>
+        <div class="footer_redes">
+          <span>Seguinos</span>
+          <a href="#" aria-label="TikTok"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <a href="#" aria-label="YouTube"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="Twitter/X"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+
+      <img
+        src="/imagenes/horuslogo.png"
+        alt="Logo Horus"
+        class="footer_logo_central"
+        onclick="scrollToTop()"
+      />
+
+      <!-- Información -->
+      <div class="footer_links">
+        <h4>Información</h4>
+        <ul>
+          <li class="li_info"><a href="Garantias.html">Garantías</a></li>
+          <li class="li_info"><a href="ComoComprar.html">Cómo comprar</a></li>
+          <li class="li_info"><a href="TerminosCond.html">Términos y condiciones</a></li>
+        </ul>
+      </div>
+
+      <!-- Nosotros -->
+      <div class="footer_nosotros">
+        <h4>Nosotros</h4>
+        <address>
+          Chacabuco 480, X5172<br />
+          La Falda, Córdoba
+        </address>
+        <p>+54 3548 43‑3410</p>
+        <p>Horusarg@gmail.com</p>
+      </div>
+
+      <!-- Medios de pago -->
+      <div class="footer_Mpago">
+        <img src="/imagenes/descarga (1).png" alt="Medios de pago" />
+      </div>
+    </div>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </footer>
+ <script src="modelos.js"></script>
+    <script src="carrito.js"></script>
+  </body>
+</html>

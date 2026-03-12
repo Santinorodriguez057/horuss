@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restablecer contraseña - Horus Streetwear</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body class="body_sesion">
+    <div class="cuadrado">
+      <aside class="panel-izquierdo">
+        <a href="Inicio.php">
+          <img
+            src="imagenes/horuslogonegro.png"
+            class="logo_sesion"
+            alt="Horus Streetwear"
+          />
+        </a>
+        <p class="contacto">horusstreetwearar@gmail.com</p>
+      </aside>
+      <div class="panel-derecho">
+        <h1 class="titulo-principal">Restablecer contraseña</h1>
+
+        <form action="restablecercontraseña.php" method="POST">
+          <div class="Iniciodesesión">
+            <label>Contraseña nueva (min 8 caracteres)</label>
+            <div class="input-con-ojo">
+              <input type="password" id="clave" name="contrasena" required />
+              <button type="button" onclick="verClave()" class="ojo">👁</button>
+            </div>
+          </div>
+          <div class="Iniciodesesión">
+        <label>Confirmar contraseña</label>
+            <div class="input-con-ojo">
+              <input type="password" id="confirmar" name="confirmar_contrasena" required />
+            </div>
+          </div>
+          <script>
+            function verClave() {
+              let input = document.getElementById("clave");
+              input.type = input.type === "password" ? "text" : "password";
+            }
+          </script>
+          <button type="submit" class="btn">Guardar contraseña</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

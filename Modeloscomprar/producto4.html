@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="producto.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>HorusXCALF</title>
+  </head>
+  <body>
+    <header class="contenedor">
+      <div>
+        <a href="/Inicio.php">
+          <img
+            src="/imagenes/horuslogo.png"
+            alt="Logo Horus"
+            class="logoarriba"
+          />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/Modelos.html">Modelos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="producto-detalle">
+      <!-- Imagen a la izquierda -->
+      <div class="producto-imagen">
+        <div class="slider-container">
+          <button class="arrow left" onclick="cambiarImagen(-1)">
+            &#10094;
+          </button>
+          <img
+            id="imagenProducto"
+            src="/imagenes/Remera/HorusXCALF.png"
+            alt="Remera"
+            class="imagen-slider"
+          />
+          <button class="arrow right" onclick="cambiarImagen(1)">
+            &#10095;
+          </button>
+          <div class="dots-container" id="dotsContainer"></div>
+        </div>
+      </div>
+
+      <!-- Info a la derecha -->
+      <div class="producto-info">
+        <p class="titulo">HorusXCALF</p>
+        <p class="precio"><del style="color: red">$210</del> $99</p>
+        <p class="descripcion">
+          Elegancia dorada y estilo deportivo se combinan en la remera
+          HorusXCALF. Confeccionada en tela liviana y transpirable, su diseño
+          exclusivo rinde homenaje al legado clásico con detalles modernos que
+          resaltan en cualquier ocasión.
+        </p>
+
+        <div class="talles">
+          <p><strong>TALLE:</strong></p>
+          <div class="talle-botones">
+            <button>S</button>
+            <button>M</button>
+            <button>L</button>
+            <button>XL</button>
+          </div>
+        </div>
+      
+          <button class="CartBtn"id="comprarBtn">
+            <span class="IconContainer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 576 512"
+                fill="rgb(17, 17, 17)"
+                class="cart"
+              >
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                ></path>
+              </svg>
+            </span>
+            <p class="text">Comprar ahora</p>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Productos recomendados -->
+    <p class="Recomendadostitulo">Recomendados</p>
+    <div class="productos-recomendados">
+      <div class="producto">
+        <a href="producto12.html"
+          ><img src="/imagenes/zapatillas/Horus Blood.png" alt="Horus Blood"
+        /></a>
+        <div class="precio">$300</div>
+        <div class="nombre">Horus Blood</div>
+        <div class="categoria">Rojo que habla por vos.</div>
+      </div>
+
+      <div class="producto">
+        <a href="producto5.html"
+          ><img src="/imagenes/Remera/HoruxXCUHG.png" alt="HorusXCALF"
+        /></a>
+        <div class="precio">$99</div>
+        <div class="nombre">HorusXCALF</div>
+        <div class="categoria">Elegancia dorada.</div>
+      </div>
+
+      <div class="producto">
+        <a href="producto7.html"
+          ><img src="/imagenes/zapatillas/LasPinoV6.png" alt="LasPinoV6"
+        /></a>
+        <div class="precio">$150</div>
+        <div class="nombre">LasPinoV6</div>
+        <div class="categoria">Habemus papam</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer_contenedor">
+        <!-- Título y redes -->
+        <div class="footer_izquierda">
+          <h2 class="footer_titulo">Horus</h2>
+          <div class="footer_redes">
+            <span>Seguinos</span>
+            <a href="#" aria-label="TikTok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter/X"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Logo central que sube al hacer click -->
+        <img
+          src="/imagenes/horuslogo.png"
+          alt="Logo Horus"
+          class="footer_logo_central"
+          onclick="scrollToTop()"
+        />
+
+        <!-- Información -->
+        <div class="footer_links">
+          <h4>Información</h4>
+          <ul>
+            <li><a href="Garantias.html">Garantías</a></li>
+            <li><a href="ComoComprar.html">Cómo comprar</a></li>
+            <li><a href="TerminosCond.html">Términos y condiciones</a></li>
+          </ul>
+        </div>
+
+        <!-- Nosotros -->
+        <div class="footer_nosotros">
+          <h4>Nosotros</h4>
+          <address>
+            Chacabuco 480, X5172<br />
+            La Falda, Córdoba
+          </address>
+          <p>+54 3548 43‑3410</p>
+          <p>Horusarg@gmail.com</p>
+        </div>
+
+        <!-- Medios de pago -->
+        <div class="footer_Mpago">
+          <img src="/imagenes/descarga (1).png" alt="Medios de pago" />
+        </div>
+      </div>
+
+      <script>
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+      </script>
+    </footer>
+
+    <script>
+      const imagenes = ["producto4/Horuscalf1.png", "producto4/Horuscalf2.png"];
+
+      let indiceActual = 0;
+
+      function mostrarImagen(index) {
+        indiceActual = index;
+        document.getElementById("imagenProducto").src = imagenes[indiceActual];
+        actualizarDots();
+      }
+
+      function cambiarImagen(direccion) {
+        indiceActual += direccion;
+        if (indiceActual < 0) indiceActual = imagenes.length - 1;
+        else if (indiceActual >= imagenes.length) indiceActual = 0;
+        mostrarImagen(indiceActual);
+      }
+
+      function crearDots() {
+        const dotsContainer = document.getElementById("dotsContainer");
+        dotsContainer.innerHTML = "";
+        for (let i = 0; i < imagenes.length; i++) {
+          const dot = document.createElement("span");
+          dot.classList.add("dot");
+          if (i === indiceActual) dot.classList.add("active");
+          dot.onclick = () => mostrarImagen(i);
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function actualizarDots() {
+        const dots = document.querySelectorAll(".dot");
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("active", i === indiceActual);
+        });
+      }
+
+      window.onload = () => {
+        mostrarImagen(0);
+        crearDots();
+      };
+
+      const botonesTalle = document.querySelectorAll(".talle-botones button");
+
+      botonesTalle.forEach((boton) => {
+        boton.addEventListener("click", () => {
+          botonesTalle.forEach((b) => b.classList.remove("selected"));
+          boton.classList.add("selected");
+        });
+      });
+      let talleSeleccionado = null;
+
+botonesTalle.forEach((boton) => {
+  boton.addEventListener("click", () => {
+    botonesTalle.forEach((b) => b.classList.remove("selected"));
+    boton.classList.add("selected");
+    talleSeleccionado = boton.textContent; // guarda el talle elegido
+  });
+});
+
+const comprarBtn = document.getElementById("comprarBtn");
+
+comprarBtn.addEventListener("click", () => {
+  if (!talleSeleccionado) {
+    alert("⚠️ Tenés que seleccionar un talle antes de continuar.");
+    return;
+  }
+
+  // 1. Recuperar carrito existente
+  let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+
+  // 2. Definir este producto
+  const producto = {
+    title: "HorusXCALF",
+    price: 99,
+    img: "/imagenes/Remera/HorusXCALF.png",
+    size: talleSeleccionado,
+    quantity: 1
+  };
+
+  // 3. Ver si ya existe con mismo talle
+  const existe = cart.findIndex(item => item.title === producto.title && item.size === producto.size);
+
+  if (existe !== -1) {
+    // ya estaba en el carrito, solo sumamos cantidad
+    cart[existe].quantity += 1;
+  } else {
+    // si no estaba, lo agregamos
+    cart.push(producto);
+  }
+
+  // 4. Guardar carrito actualizado
+  sessionStorage.setItem("cart", JSON.stringify(cart));
+
+  alert(`✅ ${producto.title} (Talle ${producto.size}) se añadió al carrito.`);
+});
+
+    </script>
+  </body>
+</html>

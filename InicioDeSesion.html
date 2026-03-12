@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InicioDeSesión - Horus Streetwear</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body class="body_sesion">
+    <div class="cuadrado">
+      <aside class="panel-izquierdo">
+        <a href="Inicio.php">
+          <img
+            src="imagenes/horuslogonegro.png"
+            class="logo_sesion"
+            alt="Horus Streetwear"
+          />
+        </a>
+        <p class="contacto">horusstreetwearar@gmail.com</p>
+      </aside>
+      <div class="panel-derecho">
+        <h1 class="titulo-principal">Inicio de sesión</h1>
+
+        <form action="/iniciodesesion.php" method="POST">
+          <div class="Iniciodesesión">
+            <label>Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="Iniciodesesión">
+        <label>Contraseña</label>
+            <div class="input-con-ojo">
+              <input type="password" id="clave" name="contrasena" required />
+              <button type="button" onclick="verClave()" class="ojo">👁</button>
+            </div>
+            <a class="Olvide_mi_contraseña" href="recuperarcontraseña.html">Olvide mi contraseña</a>
+          </div>
+          <script>
+            function verClave() {
+              let input = document.getElementById("clave");
+              input.type = input.type === "password" ? "text" : "password";
+            }
+          </script>
+          <button type="submit" class="btn">Iniciar Sesión</button>
+        </form>
+
+        <p class="login-link">
+          ¿No tienes una cuenta?
+          <a href="CrearCuenta.html">Registrate</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <header class="header_checkout">
+    <a href="Modelos.html">
+      <img
+        src="imagenes/horuslogo.png"
+        class="logo_checkout"
+        href="Modelos.html"
+      />
+    </a>
+  </header>
+  <body class="body_checkout">
+    <h1 class="h1_checkout">Finalizar Compra</h1>
+
+    <!-- Lista de productos -->
+    <section id="cart-items"></section>
+
+    <!-- Total -->
+    <h2 class="h2_checkout" id="cart-total">Total: $0</h2>
+
+    <!-- Datos del comprador -->
+    <h3 class="h3_checkout">Datos del Comprador</h3>
+    <form class="form_checkout" id="checkout-form">
+      <label class="label_checkout">
+        Nombre completo:
+        <input class="input_checkout" type="text" id="name" required /> </label
+      ><br /><br />
+
+      <label class="label_checkout">
+        Dirección:
+        <input
+          class="input_checkout"
+          type="text"
+          id="address"
+          required
+        /> </label
+      ><br /><br />
+
+      <label class="label_checkout">
+        Email:
+        <input
+          class="input_checkout"
+          type="email"
+          id="email"
+          required
+        /> </label
+      ><br /><br />
+
+      <label class="label_checkout">
+        Teléfono:
+        <input
+          class="input_checkout"
+          type="tel"
+          id="phone"
+          inputmode="tel"
+          maxlength="15"
+          placeholder="+54 9 351 123 4567"
+          pattern="^\+?[0-9\s\-\(\)]{7,15}$"
+          required
+        /> </label
+      ><br /><br />
+
+      <h3 class="h3_checkout">Datos de Pago</h3>
+      <label class="label_checkout">
+        Número de tarjeta:
+        <input
+          class="input_checkout"
+          type="text"
+          id="numtarjeta"
+          maxlength="19"
+          inputmode="numeric"
+          autocomplete="cc-numero"
+          required
+        />
+        <span id="tipotarjeta" class="tipotarjeta" aria-live="polite"></span>
+      </label>
+      <br /><br />
+
+      <label class="label_checkout">
+        Fecha de vencimiento (MM/AA):
+        <input
+          class="input_checkout"
+          type="text"
+          id="exptarjeta"
+          placeholder="MM/AA"
+          maxlength="5"
+          required
+        />
+      </label>
+      <br /><br />
+
+      <label class="label_checkout">
+        CVV:
+        <input
+          type="password"
+          id="card-cvv"
+          maxlength="4"
+          inputmode="numeric"
+          pattern="\d*"
+          required
+        />
+      </label>
+      <br /><br />
+
+      <button class="button_checkout" type="submit">Finalizar Compra</button>
+    </form>
+
+    <footer class="footer">
+      <div class="footer_contenedor">
+        <!-- Título y redes -->
+        <div class="footer_izquierda">
+          <h2 class="footer_titulo">Horus</h2>
+          <div class="footer_redes">
+            <span>Seguinos</span>
+            <a href="#" aria-label="TikTok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter/X"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <img
+          src="/imagenes/horuslogo.png"
+          alt="Logo Horus"
+          class="footer_logo_central"
+          onclick="scrollToTop()"
+        />
+
+        <!-- Información -->
+        <div class="footer_links">
+          <h4>Información</h4>
+          <ul>
+            <li class="li_info"><a href="Garantias.html">Garantías</a></li>
+            <li class="li_info"><a href="ComoComprar.html">Cómo comprar</a></li>
+            <li class="li_info">
+              <a href="TerminosCond.html">Términos y condiciones</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Nosotros -->
+        <div class="footer_nosotros">
+          <h4>Nosotros</h4>
+          <address>
+            Chacabuco 480, X5172<br />
+            La Falda, Córdoba
+          </address>
+          <p>+54 3548 43‑3410</p>
+          <p>Horusarg@gmail.com</p>
+        </div>
+
+        <!-- Medios de pago -->
+        <div class="footer_Mpago">
+          <img src="/imagenes/descarga (1).png" alt="Medios de pago" />
+        </div>
+      </div>
+
+      <script>
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+      </script>
+    </footer>
+    <script src="Checkout.js"></script>
+  </body>
+</html>
