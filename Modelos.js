@@ -19,19 +19,19 @@ document.querySelectorAll(".filtro-titulo").forEach((btn) => {
 
 // Lista de productos 
 const productos = [
-  { nombre: "Gorra rey azul", precio: 210, img: "imagenes/gorras/Gorra rey azul.png", categoria: "Accesorios", link: "/Modeloscomprar/producto1.html" },
-  { nombre: "HorusXCALF", precio: 99, img: "imagenes/Remera/HorusXCALF.png", categoria: "Ropa", link: "/Modeloscomprar/producto4.html" },
-  { nombre: "HorusEden", precio: 200, img: "imagenes/Remera/HorusEden.png", categoria: "Ropa", link: "/Modeloscomprar/producto9.html" },
-  { nombre: "MalcomX", precio: 210, img: "imagenes/zapatillas/MalcomX.png", categoria: "Calzado", link: "/Modeloscomprar/producto10.html" },
-  { nombre: "Horus Blood", precio: 300, img: "imagenes/zapatillas/Horus Blood.png", categoria: "Calzado", link: "/Modeloscomprar/producto12.html" },
-  { nombre: "HoruxXCUHG", precio: 99, img: "imagenes/Remera/HoruxXCUHG.png", categoria: "Ropa", link: "/Modeloscomprar/producto5.html" },
-  { nombre: "Gorra rey negra", precio: 210, img: "imagenes/gorras/Gorra rey negra.png", categoria: "Accesorios", link: "/Modeloscomprar/producto2.html" },
-  { nombre: "LasPinoV6", precio: 150, img: "imagenes/zapatillas/LasPinoV6.png", categoria: "Calzado", link: "/Modeloscomprar/producto7.html" },
-  { nombre: "vansxhorus", precio: 110, img: "imagenes/zapatillas/vansxhorus.png", categoria: "Calzado", link: "/Modeloscomprar/producto6.html" },
-  { nombre: "Botineshorus", precio: 300, img: "imagenes/zapatillas/Botineshorus.png", categoria: "Calzado", link: "/Modeloscomprar/producto13.html" },
-  { nombre: "Gorra rey blanca", precio: 120, img: "imagenes/gorras/Gorra rey blanca.png", categoria: "Accesorios", link: "/Modeloscomprar/producto3.html" },
-  { nombre: "Horus RDT", precio: 210, img: "imagenes/zapatillas/Horus RDT.jpeg", categoria: "Calzado", link: "/Modeloscomprar/producto11.html" },
-  { nombre: "HorusBullet", precio: 170, img: "imagenes/zapatillas/HorusBullet.png", categoria: "Calzado", link: "/Modeloscomprar/producto8.html" },
+  { nombre: "Gorra rey azul", precio: 210, img: "imagenes/gorras/Gorra rey azul.png", categoria: "Accesorios", link: "/horus/modeloscomprar/producto1.html" },
+  { nombre: "HorusXCALF", precio: 99, img: "imagenes/Remera/HorusXCALF.png", categoria: "Ropa", link: "/horus/modeloscomprar/producto4.html" },
+  { nombre: "HorusEden", precio: 200, img: "imagenes/Remera/HorusEden.png", categoria: "Ropa", link: "/horus/modeloscomprar/producto9.html" },
+  { nombre: "MalcomX", precio: 210, img: "imagenes/zapatillas/MalcomX.png", categoria: "Calzado", link: "/horus/modeloscomprar/producto10.html" },
+  { nombre: "Horus Blood", precio: 300, img: "imagenes/zapatillas/Horus Blood.png", categoria: "Calzado", link: "/horus/modeloscomprar/producto12.html" },
+  { nombre: "HoruxXCUHG", precio: 99, img: "imagenes/Remera/HoruxXCUHG.png", categoria: "Ropa", link: "/horus/modeloscomprar/producto5.html" },
+  { nombre: "Gorra rey negra", precio: 210, img: "imagenes/gorras/Gorra rey negra.png", categoria: "Accesorios", link: "/horus/modeloscomprar/producto2.html" },
+  { nombre: "LasPinoV6", precio: 150, img: "imagenes/zapatillas/LasPinoV6.png", categoria: "Calzado", link: "/horus/modeloscomprar/producto7.html" },
+  { nombre: "vansxhorus", precio: 110, img: "imagenes/zapatillas/vansxhorus.png", categoria: "Calzado", link: "/horus/modeloscomprar/producto6.html" },
+  { nombre: "Botineshorus", precio: 300, img: "imagenes/zapatillas/Botineshorus.png", categoria: "Calzado", link: "/horus/modeloscomprar/producto13.html" },
+  { nombre: "Gorra rey blanca", precio: 120, img: "imagenes/gorras/Gorra rey blanca.png", categoria: "Accesorios", link: "/horus/modeloscomprar/producto3.html" },
+  { nombre: "Horus RDT", precio: 210, img: "imagenes/zapatillas/Horus RDT.jpeg", categoria: "Calzado", link: "/horus/modeloscomprar/producto11.html" },
+  { nombre: "HorusBullet", precio: 170, img: "imagenes/zapatillas/HorusBullet.png", categoria: "Calzado", link: "/horus/modeloscomprar/producto8.html" },
 ];
 
 

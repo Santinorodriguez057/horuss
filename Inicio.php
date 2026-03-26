@@ -21,7 +21,7 @@ session_start();
   <header class="contenedor">
     <nav>
       <ul>
-        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Inicio.php">Inicio</a></li>
         <li><a href="Modelos.html">Modelos</a></li>
       </ul>
 
@@ -283,7 +283,7 @@ session_start();
       </div>
 
       <img
-        src="/imagenes/horuslogo.png"
+        src="/horus/imagenes/horuslogo.png"
         alt="Logo Horus"
         class="footer_logo_central"
         onclick="scrollToTop()"
@@ -312,7 +312,7 @@ session_start();
 
       <!-- Medios de pago -->
       <div class="footer_Mpago">
-        <img src="/imagenes/descarga (1).png" alt="Medios de pago" />
+        <img src="/horus/imagenes/descarga (1).png" alt="Medios de pago" />
       </div>
     </div>
 
